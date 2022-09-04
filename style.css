@@ -482,13 +482,13 @@ footer .icons ion-icon:hover
         transition: all 0.3s ease;
     }
    
-    .home .max-width img{
+   .home .max-width img{
         display:flex;  
         width: 600px;
         height: 600px;
-        position: relative;
-        margin-left: -70%;
-        margin-top: 25%;
+        position: absolute;
+        margin-left: -40%;
+        margin-top: -20%;
     }
     .home .home-content .text-1{
         font-size: 30px;
@@ -496,12 +496,12 @@ footer .icons ion-icon:hover
         justify-content: center;
         margin: 0 auto 60px;
         position: absolute;
-        margin-right: -21%;
+        margin-right: -16%;
         margin-top: -40%;
     
     }
     .home .home-content .text-2{
-        font-size: 35px;
+        font-size: 45px;
         display: flex;
         justify-content: center;
         margin: 60 auto 60px;
@@ -510,12 +510,12 @@ footer .icons ion-icon:hover
         
     }
     .home .home-content .text-3{
-        font-size: 20px;
+        font-size: 26px;
         display: flex;
         justify-content: center;
         margin: 10 auto 60px;
-        margin-right: -17%;
-        margin-top: -65%;   
+        margin-right: -20%;
+        margin-top: -58%;   
     }
     .sobre .sobre-content .column{
         width: 50%;
