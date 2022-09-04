@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/*  nav   inicio*/
+.nav
+{
+    position: fixed;
+    width: 100%;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 999;
+    transition: all 0.3s ease;
+    background: #000000;
+} 
+
+.nav .max-width
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav .logo img
+{
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   margin-top:-95px;
+}
+.nav .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+.nav .menu li a
+{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.nav .menu li a:hover
+{
+    color: #FEC400;
+}
+
+/*  Home   inicio  */
+.home
+{
+    display: flex;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+   
+}
+.home .max-width img
+{
+    width: 900px;
+    height: 900px;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+}
+
+.home .home-content .text-1
+{
+    font-size: 50px;
+    position: absolute;
+    right: 72%;
+    font-family: 'roboto';
+
+}
+.home .home-content .text-2
+{
+    font-size: 80px;
+    font-family: 'roboto';
+    font-weight: 800;
+    margin-left: -3px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000000;
+    position: absolute;
+    right: 55%;
+    margin-top: 9%;
+}
+.home .home-content .text-3
+{
+    font-size: 30px;
+    font-family: 'roboto';
+    position: absolute;
+    right: 79%;
+    margin-top: -6%;
+
+}
+
+
+/*  todos os codigos similares  */
+section
+{
+    padding: 100px 0;
+    background-color: rgb(161, 157, 157);
+}
+section .title
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.773);
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+section .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.home .sobre, .servicos, .skills, .contact, footer
+{
+    font-family: 'Roboto', sans-serif;
+}
+.home .home-content,
+.sobre .sobre-content,
+.servicos .serv-content,
+.skills .skills-content,
+.contact .contact-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/*  sessão sobre  */
+
+.sobre .sobre-content .left
+{
+    width: 45%;
+    
+}
+
+.sobre .sobre-content .right
+{
+    width: 55%;
+}
+.sobre .sobre-content .right .text
+{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: -15%;
+    font-family:'roboto';
+    
+}
+
+.sobre .sobre-content .right p
+{
+    text-align: justify;
+    font-size: 18px;
+    font-family:'roboto';
+}
+.sobre .sobre-content .right a
+{
+    display: inline-block;
+    background:  #FEC400;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.sobre .sobre-content .right a:hover
+{
+    color: #FEC400;
+    background: none;
+}
+.sobre .sobre-content .left img
+{
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-left: -20%;
+}
+
+/*  sessão serviços */
+.servicos, .teams
+{
+    background: #111;
+    color: #fff;
+}
+.servicos .max-width p{
+    font-family: 'roboto';
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: -5%;
+    margin-bottom:3%;
+}
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 50%;
+	-moz-transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.servicos .max-width .box img
+
+{
+    position: relative;
+    margin-bottom:2px;
+    margin-left: 2px;
+    left: 10%;
+    transition: 1s;
+
+}
+
+/*  sessão especialidades  */
+
+.skills .skills-content .column
+{
+    width: calc(50% - 30px);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 25%;
+    margin-top: 40px;
+}
+
+.skills .skills-content .right .bars
+{
+    margin-bottom: 20px;
+}
+.skills .skills-content .right .info
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span
+{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line
+{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+.skills .skills-content .right .line::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FEC400;
+}
+.skills .skills-content .right .html::before
+{
+    width: 55%;
+}
+.skills .skills-content .right .css::before
+{
+    width: 50%;
+}
+.skills .skills-content .right .js::before
+{
+    width: 15%;
+}
+.skills .skills-content .right .coreldraw::before
+{
+    width: 89%;
+}
+.skills .skills-content .right .canva::before
+{
+    width: 92%;
+}
+.skills .skills-content .right .wordpress::before
+{
+    width: 43%;
+}
+
+/*  sessão Contato  */
+
+.contact .contact-content .column
+{
+    width: calc(50% - 30px);
+}
+.contact .contact-content
+{
+    align-items: flex-start;
+}
+.contact .contact-content .left p
+{
+    text-align: justify;
+}
+.contact .contact-content .text
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons
+{
+    margin: 10px 0;
+}
+.contact .contact-content .row
+{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info
+{
+    margin-left: 30px
+}
+.contact .contact-content .row .info .head
+{
+    font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title
+{
+    color: #333;
+}
+.contact .contact-content .row ion-icon
+{
+    font-size: 25px;
+    color:  #FEC400;
+}
+.contact .rigth form .fields
+{
+    display: flex;
+}
+.contact .rigth form .field,
+.contact .rigth form .fields .field
+{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+.contact .rigth form .field input,
+.contact .rigth form .textarea textarea
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Roboto',sans-serif;
+}
+.contact .rigth form .name
+{
+    margin-right: 10px;
+}
+.contact .rigth form .email
+{
+    margin-left: 10px;
+}
+.contact .rigth form .textarea
+{
+    width: 100%;
+    height: 80px;
+}
+.contact .rigth form .textarea textarea
+{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .rigth form .button
+{
+    width: 170px;
+    height: 47px;
+}
+.contact .rigth form .button button
+{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FEC400;
+    background:  #FEC400;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .rigth form .button button:hover
+{
+    color:  #FEC400;
+    background: none;
+}
+
+/*  sessão footer  */
+footer
+{
+    background: rgb(0, 0, 0);
+    padding: 0px 23px;
+    color: #fff;
+    text-align:center;
+    letter-spacing: 20px;;
+    
+}
+footer .icons 
+{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+/*icones git, linkedin, instagram, whatsapp*/
+footer .icons ion-icon 
+{
+    padding: 30px 0;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: 0,5s ease;
+}
+/*icones git, linkedin, instagram, whatsapp*/
+footer .icons ion-icon:hover
+{
+    color: #FEC400;
+}
+
+/*---responsivo---*/
+@media (max-width: 1300px)
+{
+    .nav .max-width{
+        margin-left: 0;
+    }
+
+
+@media (max-width: 947px)
+{
+    .max-width{
+        max-width: 800px;
+        padding: 0 50px;
+    }
+   
+    .nav .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        background: #111;
+        padding-top: 80px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+   
+    .home .max-width img{
+        display:flex;  
+        width: 600px;
+        height: 600px;
+        position: relative;
+        margin-left: -70%;
+        margin-top: 25%;
+    }
+    .home .home-content .text-1{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+        position: absolute;
+        margin-right: -21%;
+        margin-top: -40%;
+    
+    }
+    .home .home-content .text-2{
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        margin: 60 auto 60px;
+        margin-right: -19%;
+        margin-top: -38%;
+        
+    }
+    .home .home-content .text-3{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 10 auto 60px;
+        margin-right: -17%;
+        margin-top: -65%;   
+    }
+    .sobre .sobre-content .column{
+        width: 50%;
+    }
+    .sobre .sobre-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .sobre .sobre-content .right{
+        flex: 100%;
+    }
+    .servicos .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    footer{
+        margin-top: 0px;
+    }
+}
+}
